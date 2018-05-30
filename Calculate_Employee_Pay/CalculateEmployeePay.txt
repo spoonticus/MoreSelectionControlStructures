@@ -1,0 +1,71 @@
+3. Calculate employee's pay
+
+INPUTS
+
+scan employee's number
+scan employee's pay rate
+scan hours worked this week
+
+PROCESSING STEPS
+
+save employee's number
+save employee's pay rate
+save hours worked this week
+check if employee's pay rate is less than 25
+	if not then show message
+		"invalid amount. Please enter the correct amount."
+		clear data
+		end
+check if hours worked this week is less than 60
+	if not then show message
+		"invalid amount. Please enter the correct amount."
+		clear data
+		end
+check if hours worked this week is 35 or less
+			then multiply employee's payrate by hours worked this week
+		else
+			multiply hours worked this week by (employee's payrate * 1.5)
+
+OUTPUTS			
+			
+print	
+	employee's number
+	employee's pay rate
+	the number of hours worked in a week
+	weekly pay
+
+END
+		
+--------------------------------------------------------------------------------
+
+PSEUDOCODE
+
+userInput employeeNumber.double
+userInput employeePayRate.double
+userInput hoursWorked.double
+
+if employeePayRate.double < 25
+	if hoursWorked.double < 60
+		if hoursWorked.double <= 35
+			weeklyPay.double = employeePayRate.double * hoursWorked.double
+		else
+			weeklyPay.double = (employeePayRate.double * 1.5) * hoursWorked.double
+	else
+		print
+			"Invalid amount. Please enter the correct amount."
+		end
+else 
+	print
+		"Invalid amount. Please enter the correct amount."
+	end
+endIf
+print
+	employeeNumber.double
+	employeePayRate.double
+	hoursWorked.double
+	weeklyPay.double
+	
+END
+
+
+ECHO is on.

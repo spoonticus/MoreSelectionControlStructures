@@ -1,0 +1,63 @@
+2. Process customer record
+
+INPUTS
+
+Save "Customer's Name"
+Save "Purchase Amount"
+Save "Tax Code"
+
+PROCESSING STEPS
+
+Check taxCode
+Compare taxCode for appropriate sales tax
+Multiply purchaseAmount by salesTaxPercent
+Save as salesTax
+Add purchaseAmount and salesTax
+Save as totalAmount
+
+
+OUTPUTS
+
+print customerName
+print purchaseAmount
+print salesTax
+print totalAmount
+
+--------------------------------------------------------------
+
+PSEUDOCODE
+
+scan "Customer's Name"
+	save as customerName
+scan "Purchase Amount"
+	save as purchaseAmount
+scan "Tax Code"
+	save as taxCode
+	
+if taxCode is 0
+	then
+		salesTaxPercent is 0
+	else if is 1
+		then 
+			salesTaxPercent is 0.03
+		else if is 2
+			then
+				salesTaxPercent is 0.05
+			else if is 3
+				then
+					salesTaxPercent is 0.07
+ENDIF
+
+salesTax = purchaseAmount * salesTaxPercent
+totalAmount = purchaseAmount + salesTax
+
+print
+	customerName
+print
+	purchaseAmount
+print
+	salesTax
+print
+	totalAmount
+END
+ECHO is on.

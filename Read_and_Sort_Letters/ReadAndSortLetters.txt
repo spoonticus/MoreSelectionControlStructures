@@ -1,0 +1,58 @@
+ECHO is on.
+1. Read and sort letters
+
+INPUTS
+
+ask user to input three(3) letters
+
+PROCESSING STEPS
+
+save userInputString
+sort the three(3) letters by ascendancy using ASCII accounting for 
+	case-insensitivity
+	accent-insensitivity
+save the process
+
+OUTPUTS
+
+print out the letters by ascendancy
+
+---------------------------------------------------------
+
+PSEUDOCODE
+
+print
+	"Please enter three letters"
+userInputString1
+userInputString2
+userInputString3
+
+sort userInput 
+	if userInputString1 > userInputString2
+	then
+		// userInputString1 -> userInputString2 -> userInputString3
+		if userInputString2 > userInputString3
+		then
+			// userInputString1 -> userInputString2 -> userInputString3
+		else
+			if userInputString1 > userInputString3
+			then
+				// userInputString1 -> userInputString3 -> userInputString2
+			else 
+				// userInputString3 -> userInputString1 -> userInputString2
+	else 
+		if userInputString3 > userInputString2 
+		then	
+			// userInputString3 -> userInputString2 -> userInputString1
+		else
+			if userInputString3 > userInputString1
+			then
+				// userInputString2 -> userInputString3 -> userInputString1
+			else
+				// userInputString2 -> userInputString1 -> userInputString3
+ENDIF
+
+print sortedString
+				
+		
+	
